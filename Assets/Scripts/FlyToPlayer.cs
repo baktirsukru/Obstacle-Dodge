@@ -9,6 +9,12 @@ public class FlyToPlayer : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+    
     void Start()
     {
         playerPosition = player.transform.position;
