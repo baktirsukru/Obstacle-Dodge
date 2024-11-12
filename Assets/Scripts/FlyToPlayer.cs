@@ -24,6 +24,7 @@ public class FlyToPlayer : MonoBehaviour
     void Update()
     {
         MoveToPlayer();
+        DestroyWhenReached();
     }
         
 
@@ -31,7 +32,6 @@ public class FlyToPlayer : MonoBehaviour
     {
         transform.position = 
         Vector3.MoveTowards(transform.position, playerPosition, (Time.deltaTime * moveSpeed));
-        DestroyWhenReached();
     }
     
 
