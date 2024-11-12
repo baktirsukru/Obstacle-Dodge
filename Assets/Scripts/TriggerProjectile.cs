@@ -8,8 +8,6 @@ public class TriggerProjectile : MonoBehaviour
     [SerializeField] GameObject projectile4;
     [SerializeField] GameObject projectile5;
 
-    [SerializeField] GameObject droppingbox;
-
     
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Player")
@@ -19,9 +17,7 @@ public class TriggerProjectile : MonoBehaviour
             projectile3.SetActive(true);
             projectile4.SetActive(true);
             projectile5.SetActive(true);
-
-            droppingbox.SetActive(true);
-            
+            Destroy(gameObject);       
         }
     }
 }
