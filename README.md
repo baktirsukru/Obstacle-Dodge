@@ -1,4 +1,2 @@
-# First_Game
-A test repository to learn using github with unity.
-
-Another line.
+# Obstacle Dodge
+A Unity game where you try to get to the finish while dodging some obstacles
