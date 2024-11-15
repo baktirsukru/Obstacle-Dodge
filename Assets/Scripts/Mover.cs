@@ -12,8 +12,12 @@ public class Mover : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /* void Update()
     {
+        MovePlayer();
+    } */
+
+    private void FixedUpdate() {
         MovePlayer();
     }
 
